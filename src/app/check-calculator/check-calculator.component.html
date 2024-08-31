@@ -1,0 +1,35 @@
+<p>check-calculator works!</p>
+<div style="display: flex;">
+    <fieldset>
+        <caption class="caption">
+            <input id="add" type="radio" name="operation" [(ngModel)]="operation" value="+">
+            <label for="add">Addition</label>
+        </caption>
+        Number1: <input type="number" [(ngModel)]="number1"><br />
+        +
+        <br>
+        Number2: <input type="number" [(ngModel)]="number2"><br />
+        Result: <input type="number" [(ngModel)]="result">
+    </fieldset>
+    <fieldset>
+        <caption class="caption">
+            <input id="multiply" type="radio" name="operation" [(ngModel)]="operation" value="x">
+            <label for="multiply">Multiplication</label>
+        </caption>
+        Number1: <input type="number" [(ngModel)]="number3"><br />
+        x
+        <br>
+        Number2: <input type="number" [(ngModel)]="number4"><br />
+        Result: <input type="number" [(ngModel)]="result1">
+    </fieldset>
+</div>
+<br />
+<button (click)="Check(audio)">Check</button>
+&nbsp;
+<button (click)="Reset()">Clear</button>
+<br />
+<label [ngClass]="isCorrect ? 'correct' : 'incorrect'" for="">{{outcome}}</label>
+
+<audio #audio>
+    <source type="audio/mp3">
+</audio>

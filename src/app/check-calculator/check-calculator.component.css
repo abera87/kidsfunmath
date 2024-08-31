@@ -1,0 +1,16 @@
+.correct{
+    color: green;
+    font-weight: bold;
+}
+.incorrect{
+    color: red;
+    font-weight: bold;
+}
+.caption{
+    font-weight: bold;
+    border-color: red;
+    border-radius: 8px;
+    border-style: solid;
+    padding: 0 10px 0 10px;
+    display: flex;
+}
